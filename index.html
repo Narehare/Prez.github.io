@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+				<section>
+					<h1>HTML</h1>
+				</section>
+
+				<section>
+					<h3>Sta je HTML?</h3>
+					<p>HTML je programski jezik koji se koristi za kreiranje dokumenata na World Wide Web-u. HTML se koristi za stvaranje hipertekstualnih datoteka.</p>
+				</section>
+
+				<section>
+					<h3>Istorija</h3>
+						<small id="Smalltxt"><p>Originalni HTML je razvio Tim Berners-Lee dok je radio u CERN-u, početkom 90-tih godina. HTML je popularnost stekao kroz široku upotrebu Mosaic programa za pregled HTML stranica.</p>
+						<p>Drugu verziju, HTML 2.0, je objavio IETF 1995. godine. Ona je predstavljala dopunu prvobitnog standarda sa mogućnostima koje su bile uobičajena praksa, ali nisu dotad bile „standardizovane“.</p>
+						<p>Zatim su nastale verzije HTML+ i HTML 3.0, koje nikad nisu bile standardizovane, ali su sadržale dosta novih mogućnosti. Ipak je dosta toga iskorišćeno u izradi HTML 3.2 specifikacije 1996. godine. Na njoj je radila W3C HTML Working Group, i ona je objavljena januara 1997. godine.</p>
+						<p>Svaka naredna verzija HTML-a je razvijana tako da ostane čitljiva na svim platformama. HTML 4 se pojavila 18. decembra 1997., da bi bila dopunjena i ispravljena u revizijama 24. aprila 1998., i 19. decembra 1999. godine.</p>
+						<p>XHTML 1.0 je predstavljao redefinisanje HTML u XML-u, i on je objavljen kao standard 2000. godine. XHTML je samo delimično kompatibilan unazad, pošto je svaki XHTML dokument gotovo validan HTML 4 dokument, ali je mnogo manji broj validnih HTML dokumenata koji su istovremeno i validni XHTML dokumenti.</p> </small>
+				</section>
+
+				<section>
+					<h3>.html</h3>
+					HTML stranice imaju nastavak .html ili .htm, a nalaze se u određenom direktorijumu servera vezanog na Internet, što ih čini dostupnim na web-u.
+				</section>
+
+				<section>
+					<section>
+						<h3>TAG-ovi</h3>
+						<p>HTML komande se pišu u vidu TAG-ova. Jedan tag je ustvari komanda koja govori pretrazivacu šta i kako da uradi tj. na koji način da prikaze sadržaj stranice.</p>
+					</section>
+					<section>
+						HTML tagovi su "case insensitive"<br>
+						Sto znaci da je svejedno pisati &lt;html&gt; ili &lt;HTML&gt;
+					</section>
+				</section>
+				<section>
+
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
